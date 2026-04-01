@@ -31,7 +31,8 @@ This diagram shows how the automated system handles the workflow using swimlanes
 **Auditability**: We store everything in an audit log so if there's ever a question about a grade, we can trace exactly what happened. 
 **Reliability**: By checking deadlines before we process anything, we make sure nothing gets processed that shouldn't. 
 **Scalability**: Since grading is automated, we can handle hundreds of students at once without hiring more staff. 
-**Integration**: We treat the LMS and TurnItIn as separate external systems, which keeps things simpler and avoids messing with both of them. **Cost Efficiency**: Using existing services like TurnItIn instead of building plagiarism detection ourselves saves the university a lot of money.
+**Integration**: We treat the LMS and TurnItIn as separate external systems, which keeps things simpler and avoids messing with both of them. 
+**Cost Efficiency**: Using existing services like TurnItIn instead of building plagiarism detection ourselves saves the university a lot of money.
 
 ## Reflection
 I created three UML diagrams to show the system from different angles, and honestly it took me a while to understand how they all fit together. The biggest learning moment was realizing how include and extend relationships actually work—I initially confused them and had to re-read the material a few times. The hardest decision was whether the LMS should be inside or outside the system boundary. I kept going back and forth on this, thinking it should be inside since students interact with it, but finally realized it had to be external since the university won't let us modify it. Designing the swimlane diagram was also trickier than I expected I made several drafts before the flow actually made sense. If I did this again, I'd sketch out the rough ideas before jumping into the actual UML tool, and I'd identify all the constraints upfront instead of discovering them as I go.
